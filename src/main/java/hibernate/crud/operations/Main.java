@@ -15,28 +15,26 @@ public class Main {
         log.info("\n=======CREATE RECORDS=======\n");
         DatabaseOperations.createStudents();
 
-        log.info("\n=======READ RECORDS=======\n");
-        List<Student> viewStudents = DatabaseOperations.displayStudents();
-        if (viewStudents != null && !viewStudents.isEmpty()) {
-            for (Student student : viewStudents) {
-                log.info("Student's name: " + student.getStudentName());
-            }
-        }
-
-        log.info("\n=======UPDATE RECORDS=======\n");
-        //TODO: ID beállítása
-        int updateId = 40;
-        DatabaseOperations.updateStudent(updateId);
-        log.info("\n=======READ RECORDS AFTER UPDATION=======\n");
-        List<Student> updateStudent = DatabaseOperations.displayStudents();
-        if (updateStudent != null && !updateStudent.isEmpty()) {
-            for (Student student : updateStudent) {
-                log.info(student.getStudentName());
-            }
-        }
-
+//        log.info("\n=======READ RECORDS=======\n");
+//        List<Student> viewStudents = DatabaseOperations.displayStudents();
+//        if (viewStudents != null && !viewStudents.isEmpty()) {
+//            for (Student student : viewStudents) {
+//                log.info("Student's name: " + student.getStudentName());
+//            }
+//        }
+//
+//        log.info("\n=======UPDATE RECORDS=======\n");
+//        int updateId = 1;
+//        DatabaseOperations.updateStudent(updateId);
+//        log.info("\n=======READ RECORDS AFTER UPDATION=======\n");
+//        List<Student> updateStudent = DatabaseOperations.displayStudents();
+//        if (updateStudent != null && !updateStudent.isEmpty()) {
+//            for (Student student : updateStudent) {
+//                log.info(student.getStudentName());
+//            }
+//        }
+//
 //        log.info("\n=======DELETE RECORD=======\n");
-//        //TODO: ID beállítása
 //        int deleteId = 5;
 //        DatabaseOperations.deleteStudent(deleteId);
 //        log.info("\n=======READ RECORDS AFTER DELETION=======\n");
